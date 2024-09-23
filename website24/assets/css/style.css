@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
 }
@@ -104,4 +108,66 @@ body {
 
 .hero_img {
     width: 45%;
+}
+
+.grid {
+    background-color: #F0F0F0;
+    max-width: 1240px;
+    margin: 0 auto;
+    border-radius: 40px;
+    padding: 64px;
+}
+
+.grid_blocks {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.grid_small {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    flex-grow: 1;
+    flex-basis: 35%;
+    font-weight: 700;
+    font-size: 34px;
+    border-radius: 20px;
+    padding: 36px;
+    height: 289px;
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+
+.grid_big {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    flex-grow: 1.6;
+    flex-basis: 55%;
+    font-weight: 700;
+    font-size: 34px;
+    border-radius: 20px;
+    padding: 36px;
+    height: 289px;
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+
+.grid_casual {
+    background-image: url("/assets/imgs/casual_bg.png");
+}
+
+.grid_formal {
+    background-image: url("/assets/imgs/formal_bg.png");
+}
+
+.grid_party {
+    background-image: url("/assets/imgs/party_bg.png");
+
+}
+
+.grid_gym {
+    background-image: url("/assets/imgs/gym_bg.png");
 }
