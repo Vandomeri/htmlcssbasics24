@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 30px;
+}
+
+.input,
+textarea {
+    background-color: blueviolet;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    resize: none;
+}
+
+textarea::-webkit-scrollbar {
+    width: 8px;
+    height: 30px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: rgba(238, 130, 238, 0.638);
+    border-top-right-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: blue;
+}
+
+.input:focus {
+    outline: none;
+}
+
+
+.input::placeholder {
+    color: #ffffffb0;
+}
+
+select {
+    background-color: blueviolet;
+    color: #fff;
+    padding: 10px;
+}
+
+select:focus {
+    outline: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
