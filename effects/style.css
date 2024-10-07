@@ -1,0 +1,116 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+
+nav {
+    display: flex;
+    column-gap: 20px;
+}
+
+.link {
+    color: #000;
+    text-decoration: none;
+    border: 1px solid orange;
+    padding: 10px;
+    transition: 0.3s linear;
+}
+
+/* Псевдокласс срабатывающий при наведении на элемент */
+.link:hover {
+    color: #fff;
+    background-color: orange;
+
+}
+
+/* Псевдокласс срабатывающий при нажатии на элемент */
+.link:active {
+    background-color: greenyellow;
+    color: #000;
+}
+
+/* Псевдокласс срабатывающий при фокусировке элемента */
+.link:focus {
+    background-color: red;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: deepskyblue;
+
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.box:nth-child(odd) {
+    background-color: darkorange;
+}
+
+x .box:last-child {
+    background-color: darkorange;
+}
+
+.box:nth-child(2n) {
+    background-color: darkorange;
+}
+
+.numbers {
+    display: flex;
+    max-width: 50%;
+    gap: 32px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.numbers div {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding-right: 32px;
+}
+
+.numbers div:last-child {
+    border: none;
+}
+
+
+.reviews {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 50px;
+}
+
+.reviews_item {
+    flex: 1 1 auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 28px;
+}
+
+.reviews_name {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+}
+
+.reviews_name::after {
+    width: 24px;
+    height: 24px;
+    content: "";
+    background-image: url('/checkmark.svg');
+    display: block;
+}
